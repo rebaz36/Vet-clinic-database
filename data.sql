@@ -14,6 +14,8 @@ VALUES (4, 'Devimon', '2017-05-12', 5, true, 11);
 
 /* project 2 */
 
+/* section 1 step 2 */
+
 /* Add more sample data to the database. */
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
