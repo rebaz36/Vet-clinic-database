@@ -181,6 +181,6 @@ ORDER BY COUNT(species_id) DESC LIMIT 1);
 
 -- Explain Quries to analyze performance
 
-explain analyze SELECT COUNT(*) FROM visits where animals_id = 4; (s)
-explain analyze SELECT * FROM visits where vets_id = 2;  (s)
-explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';  (s)
+explain analyze SELECT COUNT(*) FROM visits where animals_id = 4; (2.2s vs 0.1s)
+explain analyze SELECT * FROM visits where vets_id = 2;  (1.6s vs 1.5s)
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';  (3.6s vs 1s)
