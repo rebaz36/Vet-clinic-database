@@ -118,17 +118,6 @@ SELECT owners.full_name, COUNT(animals.owner_id) from animals JOIN owners ON ani
 
 /* step 6 */
 
--- Write queries to answer the following:
--- Who was the last animal seen by William Tatcher?
--- How many different animals did Stephanie Mendez see?
--- List all vets and their specialties, including vets with no specialties.
--- List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
--- What animal has the most visits to vets?
--- Who was Maisy Smith's first visit?
--- Details for most recent visit: animal information, vet information, and date of visit.
--- How many visits were with a vet that did not specialize in that animal's species?
--- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
-
 SELECT name FROM animals
 WHERE id = (SELECT animal_id FROM visits
 WHERE vet_id = (SELECT id FROM vets WHERE name = 'William Tatcher')
@@ -189,3 +178,9 @@ JOIN animals ON animals.id = visits.animal_id
 WHERE vet_id = (SELECT id FROM vets WHERE name = 'Maisy Smith')
 GROUP BY species_id
 ORDER BY COUNT(species_id) DESC LIMIT 1);
+
+-- Explain Quries to analyze performance
+
+explain analyze SELECT COUNT(*) FROM visits where animals_id = 4; (2.2s vs 0.1s)
+explain analyze SELECT * FROM visits where vets_id = 2;  (1.6s vs 1.5s)
+explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';  (3.6s vs 1s)
