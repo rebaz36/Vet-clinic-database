@@ -94,6 +94,12 @@ This project consist of sql queries to create a database for a vet clinic.
 - Twitter: [@rebaz415](https://twitter.com/rebaz415)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rebazf/)
 
+👤 **Didier Peran Ganthier**
+
+- GitHub: [@didierganthier](https://github.com/didierganthier)
+- Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
+- LinkedIn: [@Didier Peran Ganthier](https://linkedin.com/in/didierganthier)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
